@@ -35,6 +35,8 @@ path("users/<int:user_id>/",views.delete_user, name="delete_user"),
  path('all/orders/', views.all_orders_api, name='all_orders_api'),
    path('order/track/', views.track_order, name='track_order'),
 
+   path('health/',views.health, name="health"),
+
     ]
 
     

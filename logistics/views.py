@@ -613,3 +613,11 @@ def logout_view(request):
         print(str(e))
         return Response({"error": str(e)}, status=400)
        
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def health(request):
+
+    return Response({
+        "success":"Very Healthy..."
+    })
